@@ -317,7 +317,6 @@ spec:
       env:
         SIGNOZ_SQLSTORE_PROVIDER: sqlite
         SIGNOZ_SQLSTORE_SQLITE_PATH: /var/lib/signoz/signoz.db
-        SIGNOZ_STATSREPORTER_ENABLED: "false"
         SIGNOZ_TELEMETRYSTORE_CLICKHOUSE_DSN: tcp://signoz-telemetrystore-clickhouse.railway.internal:9000
         SIGNOZ_TELEMETRYSTORE_PROVIDER: clickhouse
       image: signoz/signoz:latest
@@ -332,7 +331,6 @@ spec:
       env:
         SIGNOZ_SQLSTORE_PROVIDER: sqlite
         SIGNOZ_SQLSTORE_SQLITE_PATH: /var/lib/signoz/signoz.db
-        SIGNOZ_STATSREPORTER_ENABLED: "false"
         SIGNOZ_TELEMETRYSTORE_CLICKHOUSE_DSN: tcp://signoz-telemetrystore-clickhouse.railway.internal:9000
         SIGNOZ_TELEMETRYSTORE_PROVIDER: clickhouse
   telemetrykeeper:

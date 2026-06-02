@@ -6,9 +6,5 @@ spec:
   deployment:
     platform: railway
     flavor: template
-  signoz:
-    spec:
-      env:
-        SIGNOZ_STATSREPORTER_ENABLED: "false"
   metastore:
     kind: sqlite
