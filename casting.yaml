@@ -1,0 +1,14 @@
+apiVersion: v1alpha1
+kind: Installation
+metadata:
+  name: signoz
+spec:
+  deployment:
+    platform: railway
+    flavor: template
+  signoz:
+    spec:
+      env:
+        SIGNOZ_STATSREPORTER_ENABLED: "false"
+  metastore:
+    kind: sqlite
