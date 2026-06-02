@@ -1,0 +1,10 @@
+apiVersion: v1alpha1
+kind: Installation
+metadata:
+  name: signoz
+spec:
+  deployment:
+    platform: railway
+    flavor: template
+  metastore:
+    kind: sqlite
