@@ -1,6 +1,5 @@
 FROM signoz/signoz:latest
 ENV SIGNOZ_SQLSTORE_PROVIDER=sqlite
 ENV SIGNOZ_SQLSTORE_SQLITE_PATH=/var/lib/signoz/signoz.db
-ENV SIGNOZ_STATSREPORTER_ENABLED=false
 ENV SIGNOZ_TELEMETRYSTORE_CLICKHOUSE_DSN=tcp://signoz-telemetrystore-clickhouse.railway.internal:9000
 ENV SIGNOZ_TELEMETRYSTORE_PROVIDER=clickhouse
